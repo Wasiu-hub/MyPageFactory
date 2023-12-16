@@ -1,0 +1,21 @@
+Objective here:
+-- how to build our own custom locator (xpath) i.e finding element using pur own custom locator (xpath)
+
+Three ways to find element locator:
+i- manually selecting elements in the DOM three
+ii- chropath
+iii- custom built
+
+-- validating the custom locator, key to open search bar is (command + f) in Mac
+
+-- Hooks contains functions to be invoked before or after our test executes
+
+-- Page Factory Pattern makes selection easier
+-- Gherkin ia a plugin to intellij which helps to speed up writing our feature files
+-- Maven creates a project with a simple Java capabilities
+
+-- Junit is used to run our test suite and to compare actual and expected result.
+-- selenium to run or interact with web element
+-- webDriver to do driver configuration
+--- Cucumber Java and Cucumber Junit is used to build step definitions
+-- pom.xml is Maven configuration file where dependencies are specified
