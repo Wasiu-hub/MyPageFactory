@@ -12,23 +12,28 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import static io.cucumber.messages.types.Duration.*;
 
 public class Search {
+
+    private WebDriver driver;
+
     @Given("I am on the next home page")
     public void i_am_on_the_next_home_page() {
         WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
+        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(5));
         driver.manage().window().maximize();
         driver.get("https://www.next.co.uk");
-        driver.findElement(By.xpath("//button[@id='onetrust-accept-btn-handler']")).click();
+        driver.findElement(By.xpath("//button[@id='onetrust-accept-btn-handler']")).click();// customized
     }
 
     @When("I enter {string} as a product")
-    public void i_enter_as_a_product(String string) {
-
+    public void i_enter_as_a_product(String productType) {
+        driver.findElement(By.xpath("//input[@id='header-big-screen-search-box']")).sendKeys(productType);
     }
 
     @When("I click on search button")
     public void i_click_on_search_button() {
+//        driver.findElement(By.xpath("//img[@alt='Search Icon']")).click();
+        driver.findElement(By.xpath("//img[@src='/static-content/icons/header/next/v1/vision/search-input-button.svg']")).click();
 
     }
 

@@ -1,5 +1,5 @@
 Objective here:
--- how to build our own custom locator (xpath) i.e finding element using pur own custom locator (xpath)
+-- how to build our own custom locator (xpath) i.e finding element using our own custom locator (xpath)
 
 Three ways to find element locator:
 i- manually selecting elements in the DOM three
@@ -19,3 +19,6 @@ iii- custom built
 -- webDriver to do driver configuration
 --- Cucumber Java and Cucumber Junit is used to build step definitions
 -- pom.xml is Maven configuration file where dependencies are specified
+
+
+---- Validating custom locator ----
