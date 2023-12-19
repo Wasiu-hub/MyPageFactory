@@ -14,7 +14,7 @@
 
 //img[@alt='Search Icon']- circle space from customized xpath - using alt attrib (has 2 search options)
 
-//img[@src='/static-content/icons/header/next/v1/vision/search-input-button.svg']- circle space from customized xpath - using src attribute (better because has 1 search option)
+//img[@src='/static-content/icons/header/next/v1/vision/search-input-button.svg']- circle space from customized xpath - using src attribute (better because has 1 search option) - A
 
 =============
 //*[@id="plp-results-title-container"]/div/h1/span - search for "Jeans" from legacy way
@@ -22,3 +22,12 @@
 //body/main[@id='next-plp-entrypoint']/div[@id='platform_modernisation_plp']/div[@id='plp']/div[2]/div[1]/div[1]/div[1]/div[1]/h1[1]/span[1] - from chropath
 
 //span[@data-testid= 'plp-product-title-text']
+
+======= using parent element to get the circle space button
+
+//*[@id="header-search-form"]/button/img
+
+//button[@data-testid='header-search-bar-button']/img --- customized (better) - B
+
+-- You can use either A or B
+

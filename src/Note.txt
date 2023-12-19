@@ -21,4 +21,6 @@ iii- custom built
 -- pom.xml is Maven configuration file where dependencies are specified
 
 
----- Validating custom locator ----
+-Validating custom locator- you can open the search bar by entering the customized locator-
+
+-- You can find the locator using the parent of the element.
