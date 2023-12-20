@@ -1,3 +1,7 @@
+i- run-up file: contains how to run the project- run configurations
+ii- feature file: contains test cases written in Gherkin language (simple English)
+iii- step definition file: where step definitions are written with java code logic.
+
 Objective here:
 -- how to build our own custom locator (xpath) i.e finding element using our own custom locator (xpath)
 
@@ -8,7 +12,7 @@ iii- custom built
 
 -- validating the custom locator, key to open search bar is (command + f) in Mac
 
--- Hooks contains functions to be invoked before or after our test executes
+-- Hooks contains functions to be invoked before or after our test (test case) executes
 
 -- Page Factory Pattern makes selection easier
 -- Gherkin ia a plugin to intellij which helps to speed up writing our feature files

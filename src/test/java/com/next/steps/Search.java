@@ -18,11 +18,7 @@ public class Search {
 
     @Given("I am on the next home page")
     public void i_am_on_the_next_home_page() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(5));
-        driver.manage().window().maximize();
-        driver.get("https://www.next.co.uk");
+
         driver.findElement(By.xpath("//button[@id='onetrust-accept-btn-handler']")).click();// customized
     }
 
@@ -47,7 +43,6 @@ public class Search {
         String actualValue = driver.findElement(By.xpath("//span[@data-testid= 'plp-product-title-text']")).getText();
 
         Assert.assertEquals(expectedValue, actualValue);
-        driver.close();
 
     }
 
