@@ -30,3 +30,10 @@ iii- custom built
 -Validating custom locator- you can open the search bar by entering the customized locator-
 
 -- You can find the locator using the parent of the element.
+
+======== Page factory =========
+
+--- accepting cookies in a page e.g using findElement() method supplied with locators in step definition files
+
+-- when creating different test cases e.g search (Search.java) or log (LogIn.java) modules at different time, there will be a need to always accept cookies in another module. If the next day, I am writing the basket related test cases, I will also need to need to write a test case again accepting the cookies. So if for any reason a developer changes the value of any locator, we will have to rectify those changes in all places where it is used, which of course is cumbersome.
+
