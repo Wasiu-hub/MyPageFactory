@@ -2,11 +2,13 @@ i- run-up file: contains how to run the project- run configurations
 ii- feature file: contains test cases written in Gherkin language (simple English)
 iii- step definition file: where step definitions are written with java code logic.
 
+-- In Cucumber, you are not allowed to extend classes that define the Step Definition, or Hooks- they both have annotations.
+
 Objective here:
 -- how to build our own custom locator (xpath) i.e finding element using our own custom locator (xpath)
 
 Three ways to find element locator:
-i- manually selecting elements in the DOM three
+i- manually selecting elements in the DOM three (legacy method)
 ii- chropath
 iii- custom built
 

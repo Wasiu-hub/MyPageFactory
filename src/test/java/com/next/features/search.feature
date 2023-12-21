@@ -8,4 +8,4 @@ Feature:
 
     And I click on search button
 
-    Then I should be able to see "Jeans" as a result tiltle
+    Then I should be able to see "Jeans" as a result title

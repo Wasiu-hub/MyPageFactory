@@ -12,9 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import static io.cucumber.messages.types.Duration.*;
 
-public class Search {
-
-    private WebDriver driver;
+public class Search extends Hooks{
 
     @Given("I am on the next home page")
     public void i_am_on_the_next_home_page() {
@@ -36,7 +34,7 @@ public class Search {
     }
 
     @Then("I should be able to see {string} as a result tiltle")
-    public void i_should_be_able_to_see_as_a_result_tiltle(String resultTitle) {
+    public void i_should_be_able_to_see_as_a_result_title(String resultTitle) {
 
         String expectedValue = "\"" + resultTitle + "\"";
 //        Thread.sleep(2000);
@@ -45,5 +43,7 @@ public class Search {
         Assert.assertEquals(expectedValue, actualValue);
 
     }
-
+    @Then("I should be able to see {string} as a result title")
+    public void iShouldBeAbleToSeeAsAResultTitle(String string) {
+    }
 }
