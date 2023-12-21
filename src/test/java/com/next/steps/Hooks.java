@@ -6,9 +6,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Hooks {
-
-    public WebDriver driver;
+public class Hooks extends CommonFunctions{
 
     @Before
     public void preActions() {
