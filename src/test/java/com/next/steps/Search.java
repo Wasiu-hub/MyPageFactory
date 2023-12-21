@@ -34,8 +34,8 @@ public class Search extends CommonFunctions {
 
     @Then("I should be able to see {string} as a result title")
     public void i_should_be_able_to_see_as_a_result_title(String resultTitle) {
-
         String expectedValue = "\"" + resultTitle + "\"";
+//        Thread.sleep(2000);
         String actualValue = searchPage.getResultTitle();
         Assert.assertEquals(expectedValue, actualValue);
 
