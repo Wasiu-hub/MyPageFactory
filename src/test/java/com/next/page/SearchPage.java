@@ -36,7 +36,6 @@ public class SearchPage {
 
     public void clickOnSearch() {
         searchBtn.click();
-
     }
 
     @FindBy(xpath = "//span[@data-testid= 'plp-product-title-text']")
